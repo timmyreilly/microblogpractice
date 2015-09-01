@@ -1,9 +1,9 @@
 #__init__.py
 
-from settings.base import *
+from .base import *
 
 try: 
-	from settings.local import *
+	from .local import *
 except ImportError:
 	pass
 	
