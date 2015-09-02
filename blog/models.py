@@ -1,3 +1,4 @@
+
 from django.db import models
 from django.template.defaultfilters import slugify
 
@@ -9,6 +10,7 @@ class Post(models.Model):
 	content = models.TextField()
 	published = models.BooleanField(default=True)
 	
+		
 	def __unicode__(self):
 		return self.title
 	
