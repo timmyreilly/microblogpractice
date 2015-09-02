@@ -79,7 +79,9 @@ ROOT_URLCONF = 'microblog.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            root("templates"),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
