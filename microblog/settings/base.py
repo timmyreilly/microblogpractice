@@ -58,7 +58,7 @@ DJANGO_APPS = (
 )
 
 THIRD_PARTY_APPS = (
-    'south',
+    #'south',
 )
 
 LOCAL_APPS = (
@@ -111,6 +111,9 @@ DATABASES = {
     }
 }
 
+# SOUTH_DATABASE_ADAPTERS = {
+#     'default': "south.db.mysql"
+# }
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
@@ -195,27 +198,15 @@ ROOT_URLCONF = 'microblog.urls'
 # Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = 'microblog.wsgi.application'
 
-TEMPLATE_DIRS = (
-    # Put strings here, like "/home/html/django_templates" or
-    # "C:/www/django/templates".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
-    root("templates"),
-)
+# TEMPLATE_DIRS = (
+#     # Put strings here, like "/home/html/django_templates" or
+#     # "C:/www/django/templates".
+#     # Always use forward slashes, even on Windows.
+#     # Don't forget to use absolute paths, not relative paths.
+#     root("templates"),
+# )
 
-INSTALLED_APPS = (
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.sites',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    #'app',
-    # Uncomment the next line to enable the admin:
-    'django.contrib.admin',
-    # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
-)
+
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
